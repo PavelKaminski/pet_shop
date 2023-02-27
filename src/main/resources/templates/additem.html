@@ -68,8 +68,18 @@
         </div>
     </section>
 
-    <div style="height: 300px"></div>
+    <form method="post" action="/additem">
+        <input type="text" name="name" placeholder="Название товара" class="form-control"><br>
+        <input type="text" name="price" placeholder="Цена товара" class="form-control"><br>
+        <input type="text" name="weight" placeholder="Вес товара" class="form-control"><br>
+        <input type="text" name="length" placeholder="Длина товара" class="form-control" ><br>
+        <input type="text" name="width" placeholder="Ширина товара" class="form-control"><br>
+        <input type="text" name="height" placeholder="Высота товара" class="form-control"><br>
+        <input type="text" name="description" placeholder="Описание товара" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Добавить товар</button>
+    </form>
 
+    <div style="height: 50px"></div>
 
 </main>
 
@@ -77,7 +87,7 @@
     <div class="container">
         <p class="float-right">
             <a href="about" style="margin-right: 20px">About</a>
-            <a href="#">Back to top</a>
+            <a href="/">Back to main</a>
         </p>
         <p>Pet Shop is &copy; Pavel Kaminski, based on BootStrap</p>
     </div>
