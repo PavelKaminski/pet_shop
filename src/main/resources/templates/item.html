@@ -75,14 +75,17 @@
     </section>
 
     <div class="album py-5 bg-light">
-        <div th:each="item : ${allitems}" class="alert alert-info mt-2">
+        <div class="alert alert-info mt-2">
             <h3>наименование: <b><span th:text="${item.getName()}"></span> </b></h3>
-            <h5>цена: <b><span th:text="${item.getPrice()}"></span> </b></h5>
-            <a th:href="@{/item/{itemid}(itemid=${item.getId()})}">Подробнее...</a>
+            <h3>цена: <b><span th:text="${item.getPrice()}"></span> </b></h3>
+            <h5>вес: <span th:text="${item.getWeight()}"></span></h5>
+            <h5>длина: <span th:text="${item.getLength()}"></span></h5>
+            <h5>ширина: <span th:text="${item.getWidth()}"></span></h5>
+            <h5>высота: <span th:text="${item.getHeight()}"></span></h5>
+            <h5>описание: <span th:text="${item.getDescription()}"></span></h5>
+
         </div>
     </div>
-
-    <div style="height: 50px"></div>
 
 </main>
 

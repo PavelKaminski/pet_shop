@@ -8,7 +8,7 @@ import lombok.Data;
 @Entity
 @Table(name = "pet_shop")
 @Data
-public class PetShopModel {
+public class ItemModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
